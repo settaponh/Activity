@@ -1,6 +1,6 @@
 using System;
 
-namespace Activity.API
+namespace ActivityAPI
 {
     public class WeatherForecast
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Activity.API.Models
+namespace ActivityAPI.Models
 {
     public class Activity
     {
