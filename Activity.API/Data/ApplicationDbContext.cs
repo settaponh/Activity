@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Activity.API.Models;
+using ActivityAPI.Models;
 
-namespace Activity.API.Data
+namespace ActivityAPI.Data
 {
     public class ApplicationDbContext : DbContext
     {
@@ -13,6 +13,6 @@ namespace Activity.API.Data
         {
 
         }
-        public DbSet<Activity.API.Models.Activity> Activities { get; set; }
+        public DbSet<Activity> Activities { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Activity.API.Migrations
+namespace ActivityAPI.Migrations
 {
     public partial class AddActivityTableToDb : Migration
     {
