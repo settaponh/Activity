@@ -1,4 +1,7 @@
+using ActivityAPI.ActivityMappers;
 using ActivityAPI.Data;
+using ActivityAPI.Repository;
+using ActivityAPI.Repository.IRepository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,6 +34,11 @@ namespace ActivityAPI
             services.AddDbContext<ApplicationDbContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
                 );
+
+            services.AddScoped<IActivityRepository, ActivityRepository>();
+
+            services.AddAutoMapper(typeof(ActivityMappings));
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
